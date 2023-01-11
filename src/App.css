@@ -1,38 +1,103 @@
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	animation: fadein 3s;
+	animation-fill-mode: forwards;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+}
+svg {
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+}
+svg:hover {
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bar {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 768px) {
+	h1 {
+		font-size: 4em;
+	}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-menu {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.5em;
+	transition: 0.2s;
+	margin-bottom: 10px;
+	align-items: right;
+	width: 100%;
+}
+
+.nav-bar {
+	width: 80%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-menu a {
+	color: #4d5058;
+	transition: 0.1s;
+	border-bottom: 3px solid transparent;
+	text-decoration: none;
+	padding: 10px;
+	margin: 25px 10px;
+}
+
+.nav-menu a:hover {
+	text-shadow: 0.5em 0.5em 0.5em -0.4em #505050;
+	color: #10131b;
+	border-bottom: 2px solid #505050;
+}
+
+#project-list {
+	width: 100%;
+
+	border-radius: 2px;
+}
+#project-list-scroll {
+	width: 100%;
+}
+
+.project {
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border-bottom: 1px solid #505050;
+}
+
+#footer {
+	width: 100%;
+	display: flex;
+	margin-top: 1rem;
+	padding: 1rem;
 }
