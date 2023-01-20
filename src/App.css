@@ -31,6 +31,14 @@ svg {
 svg:hover {
 }
 
+.bar-home {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin: auto;
+	background: white;
+}
 .bar {
 	width: 100%;
 	display: flex;
@@ -79,20 +87,58 @@ svg:hover {
 
 #project-list {
 	width: 100%;
-
+	margin: 25px 0 25px;
 	border-radius: 2px;
 }
+#about {
+	width: 100%;
+	margin: 25px 0 25px;
+	border-radius: 2px;
+}
+
 #project-list-scroll {
 	width: 100%;
 }
 
 .project {
 	padding: 10px;
-	margin: 10px;
+	margin: 25px 0 25px;
 	display: flex;
+	height: 100%;
 	flex-direction: row;
 	justify-content: space-evenly;
 	border-bottom: 1px solid #505050;
+}
+.about {
+	padding: 10px;
+	margin: 25px 0 25px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	border-bottom: 1px solid #505050;
+}
+
+.project-text {
+	flex: 1 1 0;
+	margin: 10px 5px 10px;
+}
+
+.project-img {
+	flex: 1 1 0;
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0 10px;
+}
+
+.about-text {
+	flex: 1;
+	margin: 10px 10px 10px;
+	padding: 10px;
+}
+.about-img {
+	flex: 1;
+	margin: 10px 10px 10px;
+	padding: 10px;
 }
 
 #footer {
@@ -100,4 +146,7 @@ svg:hover {
 	display: flex;
 	margin-top: 1rem;
 	padding: 1rem;
+}
+#tsparticles {
+	height: 800px;
 }

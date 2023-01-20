@@ -1,9 +1,9 @@
 import { projects } from '../data/projects';
 import Menu from './Menu';
 import Footer from './Footer';
+import pfp from '../data/Stephen.jpg';
 
 const About = () => {
-	console.log(projects);
 	return (
 		<div>
 			<div className='App'>
@@ -11,8 +11,33 @@ const About = () => {
 					<Menu />
 				</div>
 				<div id='home'>
-					<h1>Hi, I'm Stephen.</h1>
-					<p>I am a computer science graduate.</p>
+					<div id='project-list'>
+						<div className='about'>
+							<div className='about-text'>
+								<p style={{ fontSize: '50px', fontWeight: '500' }}>
+									My name is Stephen Zazueta.
+								</p>
+								<p style={{ fontSize: '30px' }}>
+									I focus mainly on full stack development within Javascript,
+									but I am always expanding my skill set. I am currently
+									improving my Python development and working on mobile
+									application development as well.
+								</p>
+							</div>
+							<div className='about-img'>
+								<img
+									src={pfp}
+									alt='pfp'
+									style={{
+										width: '80%',
+										borderRadius: '50%',
+										filter: 'drop-shadow(0 0 0.75rem black)',
+										border: '1px solid black',
+									}}
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<Footer />

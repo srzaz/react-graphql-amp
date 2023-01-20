@@ -5,7 +5,7 @@ const Menu = () => {
 	return (
 		<div className='nav-bar'>
 			<img src={logo} alt='logo' width='100px' height='100px' />
-			<nav className='nav-menu'>
+			<nav className='nav-menu' style={{ zIndex: '9999' }}>
 				<Link to='/'>Home</Link>
 				<Link to='/projects'>Projects</Link>
 				<Link to='/about'>About</Link>

@@ -11,7 +11,7 @@ const ProjectList = () => {
 						<p
 							style={{
 								textDecoration: 'underline',
-								margin: '0.5em 0.5em 0.5em',
+								margin: '0.5em 0 0.5em',
 							}}
 						>
 							See more from this project
