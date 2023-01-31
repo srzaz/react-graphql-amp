@@ -3,7 +3,6 @@ import Footer from './Footer';
 import Header from './subcomponents/Header';
 import ProjectList from './subcomponents/ProjectList';
 
-import { BsArrowBarDown } from 'react-icons/bs';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import { useCallback } from 'react';

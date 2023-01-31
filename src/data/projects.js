@@ -11,7 +11,8 @@ export const projects = [
 	{
 		id: 2,
 		name: 'Financial Analysis with R',
-		description: 'Stock and company analysis with visualizations using R.',
+		description:
+			'Stock and company analysis with visualizations using R. I parsed and cleaned data from Microsoft Excel and the web, and using ggplot, I performed statistical analysis on multiple stocks, performed portfolio optimization, and created data visualizations.',
 		image: rprojectimage,
 	},
 ];

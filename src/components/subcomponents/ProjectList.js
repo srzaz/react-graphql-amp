@@ -13,9 +13,7 @@ const ProjectList = () => {
 								textDecoration: 'underline',
 								margin: '0.5em 0 0.5em',
 							}}
-						>
-							See more from this project
-						</p>
+						></p>
 					</div>
 					<div className='project-img'>
 						<img src={project.image} alt={project.name} />

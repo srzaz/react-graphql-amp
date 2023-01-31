@@ -2,6 +2,7 @@ import { projects } from '../data/projects';
 import Menu from './Menu';
 import Footer from './Footer';
 import pfp from '../data/Stephen.jpg';
+import { BsArrowBarRight } from 'react-icons/bs';
 
 const About = () => {
 	return (
@@ -11,7 +12,7 @@ const About = () => {
 					<Menu />
 				</div>
 				<div id='home'>
-					<div id='project-list'>
+					<div id='about-list'>
 						<div className='about'>
 							<div className='about-text'>
 								<p style={{ fontSize: '45px', fontWeight: '500' }}>
@@ -37,6 +38,27 @@ const About = () => {
 								/>
 							</div>
 						</div>
+					</div>
+				</div>
+				<div class='flex flex-row '>
+					<div class='basis-full'>
+						<p>
+							Contact me here:{' '}
+							<a href='mailto:srz2@humboldt.edu?subject = Feedback&body = Message'>
+								srz2@humboldt.edu
+							</a>{' '}
+						</p>
+						<a href='../data/SZazuetaResume.pdf' download>
+							<p
+								style={{
+									fontSize: '25px',
+									textAlign: 'center',
+									textDecoration: 'underline',
+								}}
+							>
+								Resume
+							</p>
+						</a>
 					</div>
 				</div>
 			</div>

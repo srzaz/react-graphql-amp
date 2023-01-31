@@ -24,11 +24,9 @@
 	width: 80%;
 }
 svg {
-	height: 100px;
+	height: 90px;
 	width: 100px;
 	margin: 10px;
-}
-svg:hover {
 }
 
 .bar-home {
@@ -90,10 +88,11 @@ svg:hover {
 	margin: 25px 0 25px;
 	border-radius: 2px;
 }
-#about {
+#about-list {
 	width: 100%;
 	margin: 25px 0 25px;
-	border-radius: 2px;
+	border-radius: 5px;
+	border-bottom: 1px solid #505050;
 }
 
 #project-list-scroll {
@@ -107,6 +106,8 @@ svg:hover {
 	height: 100%;
 	flex-direction: row;
 	justify-content: space-evenly;
+	border-radius: 5px;
+
 	border-bottom: 1px solid #505050;
 }
 .about {
@@ -115,7 +116,6 @@ svg:hover {
 	display: flex;
 	justify-content: center;
 	height: 100%;
-	border-bottom: 1px solid #505050;
 }
 
 .project-text {
