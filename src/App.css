@@ -130,6 +130,11 @@ svg {
 	margin: 10px 0 10px;
 }
 
+.pimg {
+	animation: fadein 2s;
+	animation-fill-mode: forwards;
+}
+
 .about-text {
 	flex: 1;
 	margin: 10px 10px 10px;

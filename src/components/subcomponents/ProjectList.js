@@ -1,6 +1,29 @@
 import { projects } from '../../data/projects';
+import { useState, useEffect, useRef } from 'react';
 
 const ProjectList = () => {
+	const [index, setIndex] = useState(0);
+	const timeoutRef = useRef(null);
+	const delay = 6000;
+
+	// function resetTimeout() {
+	// 	if (timeoutRef.current) {
+	// 		clearTimeout(timeoutRef.current);
+	// 	}
+	// }
+
+	// useEffect(() => {
+	// 	resetTimeout();
+	// 	timeoutRef.current = setTimeout(
+	// 		() => setIndex((prevIndex) => (prevIndex === 1 ? 0 : 1)),
+	// 		delay
+	// 	);
+
+	// 	return () => {
+	// 		resetTimeout();
+	// 	};
+	// }, [index]);
+
 	return (
 		<div id='project-list'>
 			{projects.map((project) => (
@@ -13,10 +36,14 @@ const ProjectList = () => {
 								textDecoration: 'underline',
 								margin: '0.5em 0 0.5em',
 							}}
-						></p>
+						>
+							<a href={project.link} target='_blank' rel='noreferrer'>
+								Click here to see more
+							</a>
+						</p>
 					</div>
 					<div className='project-img'>
-						<img src={project.image} alt={project.name} />
+						<img className='pimg' src={project.image[0]} alt={project.name} />
 					</div>
 					<hr />
 				</div>
